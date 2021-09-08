@@ -18,8 +18,22 @@
         <p>Phone: (931) 319-7749</p>
         <p>Address: 266 Duke Lane, Livingston, TN 38570</p>
         <p>Assignment: Kittrell Hall</p>
-        <input id="txtPayRate">
-        <input id="txtHours">
+        <div class="form-group">
+            <label for="txtPayRate">Pay Rate</label>
+            <input id="txtPayRate">
+        </div>
+        <div class="form-group" id="divHours">
+            <label for="txtHours">Hours Worked</label>
+            <input id="txtHours">
+        </div>
+        <div class="form-group">
+            <label for="cboEmployeeType">Employee Type</label>
+            <select id="cboEmployeeType">
+                <option></option>
+                <option value="FULL">Full Time</option>
+                <option value="PART">Part Time</option>
+            </select>
+        </div>
         <button type="button" id="btnTest" class="btn btn-warning mb-3">Calculate</button>
     </div>
     <script src="js/lib/jquery.min.js"></script>

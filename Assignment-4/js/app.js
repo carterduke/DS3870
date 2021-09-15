@@ -8,6 +8,8 @@ $('#cboEmployeeType').change(function() {
     if($('#cboEmployeeType').val() == 'FULL'){
         $('#divHours').slideUp();
         //$('#divHours').css('display','none');
-
+        $('#divHours').addClass('d-none');
+    }else {
+        $('#divHours').removeClass('d-none').slideDown();
     }
 })

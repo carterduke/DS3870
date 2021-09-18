@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="67924202036-9bc35i97h6o0hl5vvls1okgvof3mq8hs.apps.googleusercontent.com.apps.googleusercontent.com">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/materia.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.js"></script>
+</head>
+<body class="bg-primary">
+    <div class="col-8 offset-4 mt-5" style="color:white">
+        <h1>Nostalgia Enterprises</h1>
+    </div>
+    <div class="card mt-3 col-10 offset-1">
+        <h4 class="mt-3">Welcome!</h4>
+        <p>The Nostalgia Enterprises Human Resource Dashboard will give you a fantastic quick view of your employees. The employees can be can viewed either in a table list or in a card structure. Our card structure give you the ability to assist an employee in discovering how many hours in a pay period they would need to work to get a goal paycheck. Additionally, the latest pay data is available in the table view.</p>
+    </div class="col-12 offset-4 mt-5">
+        <button type="button" id="btnTest" class="btn btn-warning mb-3">Switch Views</button>
+    </div>  
+        <div id="divEmployeeCards" class="d-flex flex-row flex-nowrap overflow-auto">
+    </div>
+      
+    
+    <div class="card col-10 offset-1 mt-5">
+        <table class="table" id="tblEmployees">
+            <thead>
+                <tr><th>First Name</th><th>Last Name</th><th>Position</th><th>Total Pay</th></tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="js/lib/jquery-3.6.0.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.js"></script>
+</body>
+</html>

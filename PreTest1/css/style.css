@@ -1,20 +1,26 @@
 body {
-    background-image: url("../images/background.jpg");
-    height: 100%;
-    width: 100%;
-    margin:0px;
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
     background-size: auto;
-}
-
-#divExtraLogin {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.g-signin2 {
-    width: 100%;
-}
-.abcRioButton {
-    width:100% !important;
-}
+  }
+  
+  #divEmployeeContainer  {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+  
+  #divEmployeeContainer  > .col-3 {
+      display: inline-block;
+  }
+  
+  
+  #divEmployeeContainer::-webkit-scrollbar {
+      display: none;
+  }
+  
+  #tblEmployeePay_wrapper {
+      margin-top:10px;
+  }
